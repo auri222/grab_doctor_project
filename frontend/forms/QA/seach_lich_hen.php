@@ -96,7 +96,7 @@ else if (isset($_SESSION['id'])) {
                 var keyword = $(this).val();
                 console.log("key: "+keyword);
 
-                if(keyword !== ""){
+                if(keyword !== "" && !isNaN(keyword)){
                     $.ajax({
                         url: "./function/fetch_lichhen.php",
                         method: "POST",

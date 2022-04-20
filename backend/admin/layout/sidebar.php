@@ -16,10 +16,10 @@
             <i class="bi bi-briefcase mr-2"></i>
             Quản lý bác sĩ</a>
         <a href="/nln_test/backend/admin/functions/appointment/index.php" class="d-block text-light p-3">
-            <i class="bi bi-clipboard-data mr-2"></i>
+            <i class="bi bi-calendar-week mr-2"></i>
             Quản lý lịch hẹn</a>
         <a href="/nln_test/backend/admin/functions/contact/index.php" class="d-block text-light p-3">
-            <i class="icon ion-md-text mr-2"></i>
+            <i class="bi-chat-right-text mr-2"></i>
             <?php
             $sql_contact = "SELECT COUNT(*) AS TOTAL from lien_he WHERE is_checked=0";
             $rs_contact = mysqli_query($conn, $sql_contact);
@@ -33,5 +33,8 @@
             <a href="/nln_test/backend/admin/functions/time/index.php" class="d-block text-light p-3">
             <i class="bi bi-clipboard-data mr-2"></i>
             Quản lý lịch làm việc</a>
+            <a href="/nln_test/backend/admin/functions/specialist/index.php" class="d-block text-light p-3">
+                <i class="bi bi-journal-text mr-2"></i>
+                Quản lý chuyên khoa</a>
     </div>
 </div>
