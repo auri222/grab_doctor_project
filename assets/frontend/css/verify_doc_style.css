@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@357&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+    font-family: 'Roboto Slab', serif;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1024px){
+    .wrapper{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .wrapper{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .wrapper{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 300px){
+    .content {
+        padding: 0 0px !important;
+    }
+}

@@ -1,0 +1,23 @@
+.parallax-user-profile {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('/nln_test/assets/img/frontend/run-g4e1ab73b0_1920.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;  
+    min-height: 410px;
+}
+
+.parallax-user-profile p {
+    font-size: 20px;
+}
+
+
+/* Nút edit thông tin cá nhân */
+.btn-edit-info i{
+    font-size: 20px;
+}
+
+/* Nút edit thông tin tài khoản */
+.btn-edit-acc i{
+    font-size: 20px;
+}

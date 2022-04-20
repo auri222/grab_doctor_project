@@ -1,0 +1,12 @@
+.contact {
+    background: url('/nln_test/assets/img/frontend/ladybug-g58c5a0526_1920.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;  
+    min-height: 410px;
+}
+
+.contact p {
+    font-size: 18px;
+}

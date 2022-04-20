@@ -1,0 +1,80 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.parallax {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/nln_test/assets/img/frontend/wallpaper.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;  
+    min-height: 410px;
+}
+
+.parallax p {
+    font-size: 18px;
+}
+
+
+
+.btn0 {
+    font-weight: 600;
+    height: 40px;
+    width: 240px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn0:hover {
+    background-color: white;
+    color: turquoise;
+    
+    border: none;
+}
+
+
+footer {
+    background-color: black;
+}
+
+.footer-link {
+    position: relative;
+    color: #999;
+    transition: all 0.3s;
+}
+
+.footer-link:hover, .footer-link:focus {
+    padding-left: 0.3rem;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-link:hover::before, .footer-link:focus::before {
+    opacity: 1;
+}
+
+/* Trang giới thiệu */
+.carousel-item {
+    height: calc(100vh - 72px);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+/* End Trang giới thiệu */
+
+
+/* Trang doctor  */
+.doctor-profile {
+    min-height: 500px;
+}
+
+
+/* Trang doctor  */
+
