@@ -7,10 +7,10 @@
             <i class="bi bi-clipboard-data mr-2"></i>
             Dashboard</a>
         <a href="/nln_test/backend/doctor/function/profile/index.php" class="d-block text-light p-3">
-            <i class="icon ion-md-contact mr-2"></i>
+            <i class="bi bi-person-square mr-2"></i>
             Profile</a>
         <a href="/nln_test/backend/doctor/function/appointment/index.php" class="d-block text-light p-3">
-            <i class="bi bi-clipboard-data mr-2"></i>
+            <i class="bi bi-calendar2-week mr-2"></i>
             <?php
                     $id = $_SESSION['id'];
                     $sql_appointment_total = "  SELECT COUNT(*) AS Total  
@@ -32,7 +32,7 @@
             </a>
         
         <a href="/nln_test/backend/doctor/function/lichlamviec/index.php" class="d-block text-light p-3">
-            <i class="bi bi-clipboard-data mr-2"></i>
+            <i class="bi bi-calendar3 mr-2"></i>
             Lịch làm việc</a>
     </div>
 </div>

@@ -7,7 +7,7 @@
             <i class="bi bi-clipboard-data mr-2"></i>
             Dashboard</a>
         <a href="/nln_test/backend/admin/functions/profile/index.php" class="d-block text-light p-3">
-            <i class="icon ion-md-contact mr-2"></i>
+            <i class="bi bi-person-square mr-2"></i>
             Profile</a>
         <a href="/nln_test/backend/admin/functions/account/index.php" class="d-block text-light p-3">
             <i class="icon ion-md-list-box mr-2"></i>

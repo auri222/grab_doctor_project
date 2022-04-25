@@ -65,6 +65,14 @@ if (isset($_POST['submit'])) {
     }
 
     $isAvailable = 0;
+    $count = "SELECT COUNT(*) AS TOTAL 
+	FROM lich_lam_viec llv
+	WHERE llv.idBS = $idBS AND llv.id_thu=$weekDay AND llv.id_buoi = $session AND llv.id_khung_gio = $time";
+    $rs_count = mysqli_query($conn,$count);
+    $row = mysqli_fetch_assoc($rs_count);
+    if($row['TOTAL'] > 0){
+        $error['duplicate'] = "Bạn đã chọn trùng. Vui lòng chọn lại!";
+    }
 
     if (count($error) === 0) {
         $query = "INSERT INTO lich_lam_viec (id_thu, id_buoi, id_khung_gio, idBS, isAvailable) VALUES ($weekDay, $session, $time, $idBS, $isAvailable)";
@@ -72,7 +80,7 @@ if (isset($_POST['submit'])) {
             echo "<script>location.href = './../index.php'; </script>";
             exit();
         } else {
-            $error['db_failed'] = "Không thêm được, lỗi rồi!";
+            $error['db_failed'] = "Không thêm được. Có thể bạn đã nhập trùng buổi!";
         }
     }
 }

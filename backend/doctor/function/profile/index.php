@@ -29,7 +29,7 @@ if ($row_count > 0) {
   $idBS = $row_prof['id'];
 } else {
   $hide_edit = 'style="display:none;"';
-  $warning = 'Không tìm thấy thông tin về bạn. Hãy thêm ngay';
+  $warning = 'Không tìm thấy thông tin về bạn. <a href="/nln_test/backend/doctor/function/profile/function/create.php?idTK=<?= $idTK ?>" >Hãy thêm ngay</a>';
 }
 ?>
 <!DOCTYPE html>
@@ -62,7 +62,7 @@ if ($row_count > 0) {
             <div class="row">
               <div class="col-lg-12">
                 <h1 class="font-weight-bold mb-0">Profile</h1>
-                <p class="lead text-muted">Thông tin cá nhân <span <?= $hide_add ?>>(Hãy thêm thông tin làm việc của mình trước nhá!)</span></p>
+                <p class="lead text-muted">Thông tin cá nhân <span <?= $hide_add ?>>(Hãy thêm thông tin làm việc của mình trước sau đó mới có thêm lịch làm việc)</span></p>
               </div>
             </div>
           </div>

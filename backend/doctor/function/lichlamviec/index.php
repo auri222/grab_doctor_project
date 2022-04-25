@@ -1,12 +1,27 @@
 <?php
 require_once __DIR__ . '../../../../../frontend/controllers/authController.php';
-
+include_once(__DIR__."./../../../../config/dbconnect.php");
 if (!isset($_SESSION['id'])) {
     header('location: ./../../../../frontend/forms/login/login.php');
     exit();
 }
 
 $idTK = $_SESSION['id'];
+
+//Check xem bác sĩ có nhập thông tin chưa
+$query = "SELECT COUNT(*) as TOTAL
+FROM bacsi bs
+JOIN taikhoan tk ON tk.id = bs.idTK
+WHERE tk.id = $idTK";
+
+$rs = mysqli_query($conn, $query);
+$row = mysqli_fetch_assoc($rs);
+$hide = '';
+$warning = '';
+if($row['TOTAL'] == 0){
+    $hide = 'disabled';
+    $warning = 'Bạn cần thêm thông tin về profile bác sĩ của mình để thêm lịch làm việc!';
+}
 
 ?>
 <!DOCTYPE html>
@@ -53,7 +68,7 @@ $idTK = $_SESSION['id'];
                                 <div class="card border-0">
 
                                     <div class="card-body px-0 py-2">
-                                        <button type="button" class="btn btn-primary mb-2" id="addNew">
+                                        <button type="button" class="btn btn-primary mb-2" id="addNew" <?= $hide?> data-toggle="tooltip" data-placement="top" title="<?= $warning ?>">
                                             Thêm mới
                                         </button>
                                         <div id="data_content" class="table-responsive">
