@@ -1,4 +1,4 @@
 <?php
 
-$admin_email = 'auripine68@gmail.com';
-$admin_email_pass = 'rsmlkaqkerpfoygx';
+$admin_email = 'email@gmail.com';
+$admin_email_pass = 'password';
